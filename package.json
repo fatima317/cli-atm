@@ -1,6 +1,6 @@
 {
-  "name": "cli-atm",
-  "version": "1.0.0",
+  "name": "ra1ra2-cli-atm",
+  "version": "1.0.1",
   "description": "cli based atm",
   "main": "index.js",
   "type": "module",
