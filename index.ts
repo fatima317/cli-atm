@@ -30,8 +30,11 @@ if (operationAns.operation === "withdraw") {
     type : "number"}
  ]);
  myBalance -= amountAns.amount;
- console.log("Your remaining balance is" + myBalance)   
-} else if (operationAns.operation === "check balance") {
+ if (myBalance <= amountAns) {
+ console.log("Your remaining balance is" + myBalance)}
+  else (myBalance > amountAns) ;{
+ console.log("Insufficient Balance") }
+}else if (operationAns.operation === "check balance") {
     console.log("Your balance is" + myBalance)
 } else if (operationAns.operation === "fast cash") {
 let cashAmount = await inquirer.prompt([

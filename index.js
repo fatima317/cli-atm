@@ -24,7 +24,14 @@ if (pinAnwser.pin === myPin) {
                 type: "number" }
         ]);
         myBalance -= amountAns.amount;
-        console.log("Your remaining balance is" + myBalance);
+        if (myBalance <= amountAns) {
+            console.log("Your remaining balance is" + myBalance);
+        }
+        else
+            (myBalance > amountAns);
+        {
+            console.log("Insufficient Balance");
+        }
     }
     else if (operationAns.operation === "check balance") {
         console.log("Your balance is" + myBalance);
