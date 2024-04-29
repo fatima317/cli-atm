@@ -32,7 +32,6 @@ if (pinAnwser.pin === myPin) {
                 console.log("Insufficient Balance!");
             }
         }
-        console.log("Your remaining balance is" + myBalance);
     }
     else if (operationAns.operation === "check balance") {
         console.log("Your balance is" + myBalance);
