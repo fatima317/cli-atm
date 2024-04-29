@@ -24,14 +24,15 @@ if (pinAnwser.pin === myPin) {
                 type: "number" }
         ]);
         myBalance -= amountAns.amount;
-        if (myBalance <= amountAns) {
-            console.log("Your remaining balance is" + myBalance);
-        }
-        else
-            (myBalance > amountAns);
         {
-            console.log("Insufficient Balance");
+            if (myBalance >= amountAns.amount) {
+                console.log("Your balance is" + myBalance);
+            }
+            else {
+                console.log("Insufficient Balance!");
+            }
         }
+        console.log("Your remaining balance is" + myBalance);
     }
     else if (operationAns.operation === "check balance") {
         console.log("Your balance is" + myBalance);
@@ -45,7 +46,7 @@ if (pinAnwser.pin === myPin) {
             }
         ]);
         myBalance -= cashAmount.cash;
-        console.log("Your remaining balance is" + myBalance);
+        console.log("Your remaining balance is " + myBalance);
     }
 }
 else {
